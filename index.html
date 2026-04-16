@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voting App</title>
+</head>
+<body>
+    <h1>Vote</h1>
+    <form method="POST">
+        <button name="vote" value="{{option_a}}">{{option_a}}</button>
+        <button name="vote" value="{{option_b}}">{{option_b}}</button>
+    </form>
+
+    {% if vote %}
+        <p>You voted for: {{vote}}</p>
+    {% endif %}
+
+    <p>Served by: {{hostname}}</p>
+</body>
+</html>
